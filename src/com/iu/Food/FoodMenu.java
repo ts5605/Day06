@@ -19,7 +19,7 @@ public class FoodMenu {
 		if(select==1) {
 			while(check) {
 			for(int i=0;i<foods.length;i++) {
-				System.out.println("\t메뉴\t 가격\t \t");
+				System.out.println("\t메뉴\t 가격\t 재고\t");
 				System.out.println(i+1+"\t"+foods[i].menu+"\t"+foods[i].prince+"\t"+foods[i].stock);
 			}
 
@@ -46,6 +46,18 @@ public class FoodMenu {
 				break;
 				default:
 					
+			}
+			System.out.println("다시 주문 하겠습니까");
+			System.out.println("1.yes \t 2.no");
+			int b= sc.nextInt();
+			if(b==1) {
+				
+			}else {
+				System.out.println("총 주문 내역");
+				System.out.println("\t메뉴\t 가격\t \t");
+				System.out.println("1\t"+foods[0].menu+"\t"+foods[0].prince+"\t"+foods[0].stock);
+				System.out.println();
+				check =!check;
 			}
 			}	
 		}else {
