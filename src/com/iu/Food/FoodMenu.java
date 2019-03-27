@@ -40,15 +40,17 @@ public class FoodMenu {
 						break;
 					}
 				}
-			}else {
+			}
+			else {
 				for(int i=0; i<foods.length; i++) {
 					if(m[i] != 0) {
 						System.out.println(foods[i].name + " " + m[i] + "인분" + "\t" + m[i]*foods[i].price + "원");
+						
 					}
-				}
 				check = !check;
 				break;
 			}
+			}		
 		}
 
 	}
