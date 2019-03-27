@@ -1,7 +1,7 @@
 package com.iu.Food;
 
 public class Food {
-	String menu;
-	int prince;
+	String name;
+	int price;
 	int stock;
 }
