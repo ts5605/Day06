@@ -12,21 +12,21 @@ public class FoodMain {
 		FoodMenu fm2 = new FoodMenu();
 		FoodView fv2 = new FoodView();
 		boolean check = true;
-		
+
 		Food[] foods = fi.menu();
 		while(check){
-		
-		System.out.println("1. 주문");
-		System.out.println("2. 결산");
-		int select = sc.nextInt();
-		if (select == 1) {
-			fm2.input(foods);
-			
-		}else {
-			fv2.view(foods, fm2.mc);
-			check = !check;
-			break;
-		}
+
+			System.out.println("1. 주문");
+			System.out.println("2. 결산");
+			int select = sc.nextInt();
+			if (select == 1) {
+				fm2.input(foods);
+
+			}else {
+				fv2.view(foods, fm2.mc);
+				check = !check;
+				break;
+			}
 		}
 
 	}

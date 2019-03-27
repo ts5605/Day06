@@ -10,7 +10,7 @@ public class FoodView {
 			if(mc[i]==0) {
 				System.out.println(foods[i].name+"는 판매 되지 않았습니다.");
 			}else
-			System.out.println(foods[i].name + " : " + mc[i]*foods[i].price);
+				System.out.println(foods[i].name + " : " + mc[i]*foods[i].price);
 			sum+=mc[i]*foods[i].price;
 		}
 		System.out.println("총 합계 : " + sum);
